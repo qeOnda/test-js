@@ -1,4 +1,4 @@
-import {apiGetter} from '../api'
+const apiGetter = require('../api.js')
 
 
 module.exports = async function countMajorVersionsAbove10() {

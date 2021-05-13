@@ -1,4 +1,4 @@
-import {apiGetter} from '../api'
+const apiGetter = require('../api.js')
 
 
 // Helper function that takes an array of objects and sorts username key 

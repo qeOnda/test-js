@@ -1,5 +1,5 @@
-import {apiGetter} from '../api'
- 
+const apiGetter = require('../api.js')
+
 module.exports = async function oldestPackageName() {
   try { 
     const res = await apiGetter();

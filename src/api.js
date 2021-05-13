@@ -8,7 +8,7 @@ const body = {
     "return_payload": true
 };
     
-export function apiGetter() {    
+module.exports =function apiGetter() {    
     return axios.post(url, body)
 }
 
