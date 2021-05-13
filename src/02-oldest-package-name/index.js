@@ -8,8 +8,8 @@ module.exports = async function oldestPackageName() {
     // then compare the current value to acucmulator and check which is older. Return oldest.
     let oldestPackage = res.data.content.reduce((a,b) => {
       return new Date(a.package.date) > new Date(b.package.date) ? b : a;
-    })
-    return oldestPackage.package.name
+    });
+    return oldestPackage.package.name;
   } catch (err) {
     console.log(err);
   }
